@@ -2,15 +2,20 @@ import OBR from "https://cdn.owlbear.rodeo/sdk/latest/obrsdk.esm.js";
 
 OBR.onReady(() => {
   OBR.tool.create({
-    id: "ficha-meu-sistema-adv.tool",
-    icons: [{ icon: "/icon.svg", label: "Ficha" }],
-    title: "Ficha Avançada",
+    id: "plugin-bloco-notas.tool",
+    title: "Bloco de Notas",
+    icons: [
+      {
+        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828817.png",
+        label: "Notas"
+      }
+    ],
     onClick() {
       OBR.popover.open({
-        id: "ficha-meu-sistema-adv.popover",
-        url: "https://recantodraconico.github.io/Ficha-Niglux-Owlbear/index.html",
-        width: 880,
-        height: 760
+        id: "plugin-bloco-notas.popover",
+        url: "https://SEU_USUARIO.github.io/SEU_REPO/index.html",
+        width: 500,
+        height: 600
       });
     }
   });
